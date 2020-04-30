@@ -1,5 +1,5 @@
 {
-  "homepage": "https://madison-react-ecommerce.herokuapp.com",
+  "heroku-postbuid": "cross-env NODE_ENV=production WEBPACK_CONFIG=browser_prod,server_prod webpack --colors",
   "name": "react-ecommerce",
   "version": "0.1.0",
   "private": true,
