@@ -26,7 +26,7 @@ serviceWorker.unregister(); */
 
 
 ReactDOM.render(
-  <BrowserRouter basename="/react-ecommerce">
+  <BrowserRouter basename={`${process.env.PUBLIC_URL}/`}>
     <Switch>
       <Route exact path="/" component={App} />
       <Route exact path="/tops" component={Tops} />
