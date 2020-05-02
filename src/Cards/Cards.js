@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import './Cards.css';
+import CardOne from '../Images/SVG/card1.svg';
+import CardTwo from '../Images/SVG/cardtwo.svg';
 import SingleCard from './SingleCard/SingleCard.js';
 
 class Cards extends Component {
@@ -9,7 +11,7 @@ class Cards extends Component {
                 id: 1,
                 title: "Climb new heights.",
                 description: "Bras designed with Luxtreme Fabric so you can hit peak.",
-                img: 'https://images.unsplash.com/photo-1507034589631-9433cc6bc453?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=931&q=80',
+                img: CardOne,
                 topRow: true,
                 button: 'Shop Bras'
             },
@@ -17,7 +19,7 @@ class Cards extends Component {
                 id: 2,
                 title: "Reach new destinations.",
                 description: "Let our Nulu Fabric keep you moving.",
-                img: 'https://images.unsplash.com/photo-1539182972012-585804f77548?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=934&q=80',
+                img: CardTwo,
                 topRow: true,
                 button: 'Shop Tops'
             },
@@ -25,7 +27,7 @@ class Cards extends Component {
                 id: 3,
                 title: "Four-way stretch when you need it most.",
                 description: "",
-                img: 'https://images.businessoffashion.com/site/uploads/2017/10/Naked-lululemon.jpg?auto=format%2Ccompress&crop=faces%2Centropy&fit=crop&max-h=512&w=1024',
+                img: 'https://images.squarespace-cdn.com/content/v1/5b5df0ddf8370a6f376ce373/1540049412129-Z719OOPUQFBRKJOF10HS/ke17ZwdGBToddI8pDm48kM_CwjWwCtG9UHjy9x9uViZZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpw7xHZ0WvPQE2Vx6oS9Srq5be3SpuLRwhm3PhMjARSUF_OT6P6eL_aTentgQzyUuZM/gbl_feb18_Align_W_0_8_right.jpeg',
                 button: "Shop Leggings",
                 topRow: false,
                 button: 'Shop Bottoms'
