@@ -1,31 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fe0c3b6b9c0c63b0773c191058b21a1e",
+    "revision": "719b2fcab75ea2ebb1685cece51a6e6b",
     "url": "/react-ecommerce/index.html"
   },
   {
-    "revision": "56c30ccbe87d3dd556fa",
+    "revision": "7e7c022ffd81bbf8fd67",
     "url": "/react-ecommerce/static/css/2.2d5d2296.chunk.css"
   },
   {
-    "revision": "c9e92f1aa5b8233397c2",
-    "url": "/react-ecommerce/static/css/main.70a97254.chunk.css"
+    "revision": "93b5c1155812592f438d",
+    "url": "/react-ecommerce/static/css/main.686dfa05.chunk.css"
   },
   {
-    "revision": "56c30ccbe87d3dd556fa",
-    "url": "/react-ecommerce/static/js/2.66add71e.chunk.js"
+    "revision": "7e7c022ffd81bbf8fd67",
+    "url": "/react-ecommerce/static/js/2.83bd6573.chunk.js"
   },
   {
     "revision": "d09ac505fec0e9130a1d5b85fb3fa6dc",
-    "url": "/react-ecommerce/static/js/2.66add71e.chunk.js.LICENSE.txt"
+    "url": "/react-ecommerce/static/js/2.83bd6573.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c9e92f1aa5b8233397c2",
-    "url": "/react-ecommerce/static/js/main.2e3a8604.chunk.js"
+    "revision": "93b5c1155812592f438d",
+    "url": "/react-ecommerce/static/js/main.42295936.chunk.js"
   },
   {
     "revision": "080b56ed1c65cfc6425c",
     "url": "/react-ecommerce/static/js/runtime-main.e6e77293.js"
+  },
+  {
+    "revision": "96906a7266702d5b36cba1e47116caed",
+    "url": "/react-ecommerce/static/media/card1.96906a72.svg"
+  },
+  {
+    "revision": "65bbbb2c609bf225ee68f41a3f04651c",
+    "url": "/react-ecommerce/static/media/cardtwo.65bbbb2c.svg"
   },
   {
     "revision": "e209a4b09c174fbec7c9356089a286f8",
