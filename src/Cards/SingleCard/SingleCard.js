@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { Card, Button } from 'react-bootstrap';
+import Shipping from '../../Images/SVG/shipping.svg';
 
 class SingleCard extends Component {
     static defaultProps = {
         id: 4,
-        title: "Staying connected around the world.",
+        title: "",
         description: "",
-        img: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1588&q=80',
-        button: 'Get Social'
+        img: Shipping,
+        button: ''
     }
     render() {
         return (
@@ -19,7 +20,10 @@ class SingleCard extends Component {
                         <Card.Text>
                             {this.props.description}
                         </Card.Text>
-                        <Button variant="primary">{this.props.button}</Button>
+                        {this.props.button != ''
+                            ? <Button variant="primary">{this.props.button}</Button>
+                            : null
+                        }
                     </Card.ImgOverlay>
                 </Card>
             </div>
