@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-ecommerce/static/css/main.686dfa05.chunk.css",
-    "main.js": "/react-ecommerce/static/js/main.0888183d.chunk.js",
-    "main.js.map": "/react-ecommerce/static/js/main.0888183d.chunk.js.map",
+    "main.css": "/react-ecommerce/static/css/main.70d5b962.chunk.css",
+    "main.js": "/react-ecommerce/static/js/main.8be86031.chunk.js",
+    "main.js.map": "/react-ecommerce/static/js/main.8be86031.chunk.js.map",
     "runtime-main.js": "/react-ecommerce/static/js/runtime-main.e6e77293.js",
     "runtime-main.js.map": "/react-ecommerce/static/js/runtime-main.e6e77293.js.map",
     "static/css/2.2d5d2296.chunk.css": "/react-ecommerce/static/css/2.2d5d2296.chunk.css",
-    "static/js/2.cf786752.chunk.js": "/react-ecommerce/static/js/2.cf786752.chunk.js",
-    "static/js/2.cf786752.chunk.js.map": "/react-ecommerce/static/js/2.cf786752.chunk.js.map",
+    "static/js/2.7c4423ef.chunk.js": "/react-ecommerce/static/js/2.7c4423ef.chunk.js",
+    "static/js/2.7c4423ef.chunk.js.map": "/react-ecommerce/static/js/2.7c4423ef.chunk.js.map",
     "index.html": "/react-ecommerce/index.html",
-    "precache-manifest.abb04c38474d322a65badbd619ecb6b0.js": "/react-ecommerce/precache-manifest.abb04c38474d322a65badbd619ecb6b0.js",
+    "precache-manifest.2a2d04d4cd92837d94d55a88b32e8f0c.js": "/react-ecommerce/precache-manifest.2a2d04d4cd92837d94d55a88b32e8f0c.js",
     "service-worker.js": "/react-ecommerce/service-worker.js",
     "static/css/2.2d5d2296.chunk.css.map": "/react-ecommerce/static/css/2.2d5d2296.chunk.css.map",
-    "static/css/main.686dfa05.chunk.css.map": "/react-ecommerce/static/css/main.686dfa05.chunk.css.map",
-    "static/js/2.cf786752.chunk.js.LICENSE.txt": "/react-ecommerce/static/js/2.cf786752.chunk.js.LICENSE.txt",
+    "static/css/main.70d5b962.chunk.css.map": "/react-ecommerce/static/css/main.70d5b962.chunk.css.map",
+    "static/js/2.7c4423ef.chunk.js.LICENSE.txt": "/react-ecommerce/static/js/2.7c4423ef.chunk.js.LICENSE.txt",
     "static/media/card1.svg": "/react-ecommerce/static/media/card1.96906a72.svg",
     "static/media/cardtwo.svg": "/react-ecommerce/static/media/cardtwo.65bbbb2c.svg",
     "static/media/ebb2.svg": "/react-ecommerce/static/media/ebb2.e209a4b0.svg",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.e6e77293.js",
     "static/css/2.2d5d2296.chunk.css",
-    "static/js/2.cf786752.chunk.js",
-    "static/css/main.686dfa05.chunk.css",
-    "static/js/main.0888183d.chunk.js"
+    "static/js/2.7c4423ef.chunk.js",
+    "static/css/main.70d5b962.chunk.css",
+    "static/js/main.8be86031.chunk.js"
   ]
 }
