@@ -9,15 +9,15 @@ class Cards extends Component {
         list: [
             {
                 id: 1,
-                title: "Climb new heights.",
-                description: "Bras designed with Luxtreme Fabric so you can hit peak.",
+                title: "Supporting All Angles.",
+                description: "Stay supported with Luxtreme Fabric.",
                 img: CardOne,
                 topRow: true,
                 button: 'Shop Bras'
             },
             {
                 id: 2,
-                title: "Reach new destinations.",
+                title: "Staying Moving with Nulu.",
                 description: "Let our Nulu Fabric keep you moving.",
                 img: CardTwo,
                 topRow: true,

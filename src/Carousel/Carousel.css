@@ -2,3 +2,23 @@
     width: 100%;
      object-fit: cover;
 }
+
+.carousel-button {
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .carousel-button {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        text-transform: uppercase;
+        padding-top: .7vw;
+        padding-bottom: .7vw;
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+        font-size: 1.5vw;
+    }
+}

@@ -14,7 +14,7 @@ const carousel = () => (
                     src={Luxtreme}
                     alt="First slide" />
                 <Carousel.Caption>
-                    <button>Shop Now</button>
+                    <button class="carousel-button">Shop Now</button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -25,7 +25,7 @@ const carousel = () => (
                 />
 
                 <Carousel.Caption>
-                    <button>Shop Now</button>
+                    <button class="carousel-button">Shop Now</button>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -36,7 +36,7 @@ const carousel = () => (
                 />
 
                 <Carousel.Caption>
-                    <button>Shop Now</button>
+                    <button class="carousel-button">Shop Now</button>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

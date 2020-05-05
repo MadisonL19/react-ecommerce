@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Card, Button } from 'react-bootstrap';
 import Shipping from '../../Images/SVG/shipping.svg';
+import './SingleCard.css';
 
 class SingleCard extends Component {
     static defaultProps = {
@@ -13,20 +14,20 @@ class SingleCard extends Component {
     render() {
         return (
             <div className="card">
-                <Card className="bg-dark text-white">
+                <Card className="bs-card">
                     <Card.Img src={this.props.img} alt="Card image" />
                     <Card.ImgOverlay>
-                        <Card.Title>{this.props.title}</Card.Title>
-                        <Card.Text>
+                        <Card.Title className="bs-card-title">{this.props.title}</Card.Title>
+                        <Card.Text className="bs-card-text">
                             {this.props.description}
                         </Card.Text>
                         {this.props.button != ''
-                            ? <Button variant="primary">{this.props.button}</Button>
+                            ? <Button className="bs-card-button" variant="primary">{this.props.button}</Button>
                             : null
                         }
                     </Card.ImgOverlay>
                 </Card>
-            </div>
+            </div >
         )
     }
 }

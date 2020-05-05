@@ -1,0 +1,25 @@
+.bs-card-title {
+    font-size: 1.7vw;
+}
+
+.bs-card-text {
+    display: none;
+    font-size: 1.5vw;
+}
+
+.bs-card-button {
+    font-size: 1.5vw;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .bs-card-title {
+        font-size: 1.7vw;
+    }
+    
+    .bs-card-text {
+        display: block;
+        font-size: 1.5vw;
+    }
+    
+}
