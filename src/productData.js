@@ -17,6 +17,8 @@ const Products = [
         colors: [{
             colorId: 1,
             colorName: 'Ballet',
+            colorHex: '#fdddd1',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW3DMSS_043612_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW3DMSS_043612_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW3DMSS_043612_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -25,6 +27,8 @@ const Products = [
         }, {
             colorId: 2,
             colorName: 'Black',
+            colorHex: '#000000',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW3DMTS_0001_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW3DMTS_0001_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW3DMTS_0001_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -34,6 +38,8 @@ const Products = [
         {
             colorId: 3,
             colorName: 'Lavender',
+            colorHex: '#ddd0dd',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW3DMSS_037013_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW3DMSS_037013_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW3DMSS_037013_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -62,12 +68,16 @@ const Products = [
         colors: [{
             colorId: 1,
             colorName: 'White',
+            colorHex: '#FFFFFF',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW1CRTS_0002_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW1CRTS_0002_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW1CRTS_0002_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }, {
             colorId: 2,
             colorName: 'Black',
+            colorHex: '#000000',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW1BSWS_0001_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }],
         sizes: [0, 2, 4, 6, 8, 10, 12, 14],
@@ -91,6 +101,8 @@ const Products = [
         colors: [{
             colorId: 1,
             colorName: 'Washed Red',
+            colorHex: '#9e4e59',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW1CK1S_044256_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW1CK1S_044256_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW1CK1S_044256_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -99,6 +111,8 @@ const Products = [
         }, {
             colorId: 2,
             colorName: 'White',
+            colorHex: '#FFFFFF',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW1BX8S_0002_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW1BX8S_0002_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW1BX8S_0002_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -126,6 +140,8 @@ const Products = [
         colors: [{
             colorId: 1,
             colorName: 'White',
+            colorHex: '#FFFFFF',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW3CHIS_0002_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW3CHIS_0002_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW3CHIS_0002_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -134,11 +150,15 @@ const Products = [
         }, {
             colorId: 2,
             colorName: 'Black',
+            colorHex: '#000000',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW3CHIS_0001_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         },
         {
             colorId: 3,
             colorName: 'Camo Coal',
+            colorHex: '',
+            colorImg: 'https://images.lululemon.com/is/image/lululemon/31691?wid=68&hei=68&fit=crop,1&op_usm=0.8,1,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW3DR6S_031691_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }
         ],
@@ -163,6 +183,8 @@ const Products = [
         colors: [{
             colorId: 1,
             colorName: 'Black',
+            colorHex: '#000000',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW3DPPS_0001_1?$image_carousel$&wid=1280&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW3DPPS_0001_2?$image_carousel$&wid=1280&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW3DPPS_0001_3?$image_carousel$&wid=1280&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -171,6 +193,8 @@ const Products = [
         }, {
             colorId: 2,
             colorName: 'Lunar',
+            colorHex: '#998489',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW3DPPS_034268_1?$image_carousel$&wid=1280&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW3DPPS_034268_2?$image_carousel$&wid=1280&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW3DPPS_034268_3?$image_carousel$&wid=1280&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -180,6 +204,8 @@ const Products = [
         {
             colorId: 3,
             colorName: 'Porcelain',
+            colorHex: '#ecced3',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW3DPPS_030437_1?$image_carousel$&wid=1280&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW3DPPS_030437_2?$image_carousel$&wid=1280&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW3DPPS_030437_3?$image_carousel$&wid=1280&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -207,6 +233,8 @@ const Products = [
         colors: [{
             colorId: 1,
             colorName: 'Ivory',
+            colorHex: '#fbf4ec',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW1BUAS_033454_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW1BUAS_033454_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW1BUAS_033454_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -215,11 +243,15 @@ const Products = [
         }, {
             colorId: 2,
             colorName: 'Wine',
+            colorHex: '#461b25',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW1BTOS_026950_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         },
         {
             colorId: 3,
             colorName: 'Black',
+            colorHex: '#000000',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW1BTOS_0001_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }
         ],
@@ -244,6 +276,8 @@ const Products = [
         colors: [{
             colorId: 1,
             colorName: 'White Camo',
+            colorHex: '',
+            colorImg: 'https://images.lululemon.com/is/image/lululemon/45102?wid=68&hei=68&fit=crop,1&op_usm=0.8,1,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW5CQSS_045102_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW5CQSS_045102_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW5CQSS_045102_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -252,11 +286,15 @@ const Products = [
         }, {
             colorId: 2,
             colorName: 'Soft Grey',
+            colorHex: '',
+            colorImg: 'https://images.lululemon.com/is/image/lululemon/24921?wid=68&hei=68&fit=crop,1&op_usm=0.8,1,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW5CDCS_024921_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         },
         {
             colorId: 3,
             colorName: 'Space Grey',
+            colorHex: '',
+            colorImg: 'https://images.lululemon.com/is/image/lululemon/1966?wid=68&hei=68&fit=crop,1&op_usm=0.8,1,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW5BXJS_1966_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }
         ],
@@ -281,6 +319,8 @@ const Products = [
         colors: [{
             colorId: 1,
             colorName: 'Naval Blue',
+            colorHex: '',
+            colorImg: 'https://images.lululemon.com/is/image/lululemon/43989?wid=68&hei=68&fit=crop,1&op_usm=0.8,1,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW5CR9S_043989_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW5CR9S_043989_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW5CR9S_043989_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -308,6 +348,8 @@ const Products = [
         colors: [{
             colorId: 1,
             colorName: 'Burgundy',
+            colorHex: '#522a33',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW6AMYS_026950_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW6AMYS_026950_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW6AMYS_026950_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -316,6 +358,8 @@ const Products = [
         }, {
             colorId: 2,
             colorName: 'Ink Blue',
+            colorHex: '#5f6a84',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW6AMYS_043629_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW6AMYS_043629_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW6AMYS_043629_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -325,11 +369,15 @@ const Products = [
         {
             colorId: 3,
             colorName: 'Graphite',
+            colorHex: '#4d4d4d',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW6AMYS_030210_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         },
         {
             colorId: 4,
             colorName: 'Olive',
+            colorHex: '#5c4f3f',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW6AMYS_026083_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }
         ],
@@ -354,6 +402,8 @@ const Products = [
         colors: [{
             colorId: 1,
             colorName: 'Olive',
+            colorHex: '#5c4f3f',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW6BAVS_026083_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW6BAVS_026083_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW6BAVS_026083_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -362,21 +412,29 @@ const Products = [
         }, {
             colorId: 2,
             colorName: 'Camo Coal',
+            colorHex: '',
+            colorImg: 'https://images.lululemon.com/is/image/lululemon/31691?wid=68&hei=68&fit=crop,1&op_usm=0.8,1,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW6BEJS_042744_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         },
         {
             colorId: 3,
             colorName: 'Wine',
+            colorHex: '#461b25',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW6BAVS_026950_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         },
         {
             colorId: 4,
             colorName: 'Navy',
+            colorHex: '#242738',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW6BAVS_031382_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         },
         {
             colorId: 5,
             colorName: 'Black',
+            colorHex: '#000000',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW6BAVS_0001_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }
         ],
@@ -401,6 +459,8 @@ const Products = [
         colors: [{
             colorId: 1,
             colorName: 'Black',
+            colorHex: '#000000',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW5BPJS_0001_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW5BPJS_0001_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW5BPJS_0001_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -409,6 +469,8 @@ const Products = [
         }, {
             colorId: 2,
             colorName: 'Navy',
+            colorHex: '#242738',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW5BPJS_031382_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW5BPJS_031382_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW5BPJS_031382_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -436,12 +498,16 @@ const Products = [
         colors: [{
             colorId: 1,
             colorName: 'Key Lime',
+            colorHex: '',
+            colorImg: 'https://images.lululemon.com/is/image/lululemon/47311?wid=68&hei=68&fit=crop,1&op_usm=0.8,1,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW5DADS_047311_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW5DADS_047311_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW5DADS_047311_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }, {
             colorId: 2,
             colorName: 'Stargaze',
+            colorHex: '',
+            colorImg: 'https://images.lululemon.com/is/image/lululemon/47310?wid=68&hei=68&fit=crop,1&op_usm=0.8,1,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW5DADS_047310_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW5DADS_047310_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW5DADS_047310_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
@@ -467,6 +533,8 @@ const Products = [
         colors: [{
             colorId: 1,
             colorName: 'Jade Grey',
+            colorHex: '#cfd5ca',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW2BHSS_036303_5?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW2BHSS_036303_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW2BHSS_036303_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -494,6 +562,8 @@ const Products = [
         colors: [{
             colorId: 1,
             colorName: 'Silver Stripe',
+            colorHex: '',
+            colorImg: 'https://images.lululemon.com/is/image/lululemon/22921?wid=68&hei=68&fit=crop,1&op_usm=0.8,1,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW2C82S_022921_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW2C82S_022921_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW2C82S_022921_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -502,16 +572,22 @@ const Products = [
         }, {
             colorId: 2,
             colorName: 'Porcelain',
+            colorHex: '',
+            colorImg: 'https://images.lululemon.com/is/image/lululemon/37015?wid=68&hei=68&fit=crop,1&op_usm=0.8,1,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW2731S_037015_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         },
         {
             colorId: 3,
             colorName: 'Algae',
+            colorHex: '#627561',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW2670S_044329_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         },
         {
             colorId: 4,
             colorName: 'Black',
+            colorHex: '#000000',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW2670S_0001_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }
         ],
@@ -536,6 +612,8 @@ const Products = [
         colors: [{
             colorId: 1,
             colorName: 'Lavender',
+            colorHex: '#ded1dd',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW2BLGS_037013_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img2: 'https://images.lululemon.com/is/image/lululemon/LW2BLGS_037013_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW2BLGS_037013_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
@@ -544,11 +622,15 @@ const Products = [
         }, {
             colorId: 2,
             colorName: 'Algae',
+            colorHex: '#627561',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW2BLGS_043608_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         },
         {
             colorId: 3,
             colorName: 'Black',
+            colorHex: '#000000',
+            colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW2BLGS_0001_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }
         ],

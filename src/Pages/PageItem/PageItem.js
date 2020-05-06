@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 import { Card, Button, Modal, Row, Container, Col } from 'react-bootstrap';
 import PhotoSlider from '../../PhotoSlider/PhotoSlider.js';
 import './PageItem.css';
-import Products from '../../productData.js';
 import ColorButton from '../../ColorButton/ColorButton.js';
 
 class PageItem extends Component {
@@ -18,12 +17,13 @@ class PageItem extends Component {
         this.state = {
             show: false,
             color: 1,
-            photoColor: 1
+            photoColor: 1,
+            displayColor: 1
         };
     }
 
     changeColor(colorId) {
-        this.setState({ color: colorId, photoColor: colorId });
+        this.setState({ color: colorId, photoColor: colorId, displayColor: colorId });
     }
 
     handleClose() {
@@ -74,18 +74,29 @@ class PageItem extends Component {
                                         )
                                     }
                                 })}
-                                <p>Colors:
+                                <div className="PageItem-ColorButton-Options">
+                                    {this.props.colors.map((color) => {
+                                        return (
+                                            <div className="PageItem-ColorButton">
+                                                <ColorButton
+                                                    colorId={color.colorId}
+                                                    colorName={color.colorName}
+                                                    colorHex={color.colorHex}
+                                                    colorImg={color.colorImg}
+                                                    onClick={this.changeColor}
+                                                />
+                                            </div>)
+                                    })}
+                                </div>
                                 {this.props.colors.map((color) => {
-                                    return (
-                                        <div>
-                                            <ColorButton
-                                                colorId={color.colorId}
-                                                colorName={color.colorName}
-                                                onClick={this.changeColor}
-                                            />
-                                        </div>)
+                                    if (color.colorId === this.state.displayColor) {
+                                        return (
+                                            <div>
+                                                <p>{color.colorName}</p>
+                                            </div>
+                                        )
+                                    }
                                 })}
-                                </p>
                             </Col>
                             <Col>
                                 <p>{this.props.description}</p>

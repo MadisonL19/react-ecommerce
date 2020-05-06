@@ -3,3 +3,7 @@
     min-width: 640px;
     margin: 5vw auto;
 }
+
+.PageItem-ColorButton {
+    display: inline-block;
+}
