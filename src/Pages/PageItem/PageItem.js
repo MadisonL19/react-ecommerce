@@ -4,6 +4,7 @@ import { Card, Button, Modal, Row, Container, Col } from 'react-bootstrap';
 import PhotoSlider from '../../PhotoSlider/PhotoSlider.js';
 import './PageItem.css';
 import ColorButton from '../../ColorButton/ColorButton.js';
+import SizeButton from '../../SizeButton/SizeButton.js';
 
 class PageItem extends Component {
     constructor(props, context) {
@@ -13,21 +14,26 @@ class PageItem extends Component {
         this.handleClose = this.handleClose.bind(this);
         this.addItem = this.addItem.bind(this);
         this.changeColor = this.changeColor.bind(this);
+        this.changeSize = this.changeSize.bind(this);
 
         this.state = {
             show: false,
             color: 1,
-            photoColor: 1,
-            displayColor: 1
+            selectedColor: '',
+            size: 0
         };
     }
 
     changeColor(colorId) {
-        this.setState({ color: colorId, photoColor: colorId, displayColor: colorId });
+        this.setState({ color: colorId });
+    }
+
+    changeSize(sizeId) {
+        this.setState({ size: sizeId });
     }
 
     handleClose() {
-        this.setState({ show: false, color: 1, photoColor: 1 });
+        this.setState({ show: false, color: 1 });
     }
 
     handleShow() {
@@ -36,6 +42,7 @@ class PageItem extends Component {
 
     addItem() {
         inCart.push(this.props.id);
+        cartColors.push({ item: this.props.id, color: this.state.color, size: this.state.size });
         cartTotal += (this.props.price);
         this.setState({ show: false });
     }
@@ -61,7 +68,7 @@ class PageItem extends Component {
                         <Row>
                             <Col>
                                 {this.props.colors.map((color) => {
-                                    if (color.colorId === this.state.photoColor) {
+                                    if (color.colorId === this.state.color) {
                                         return (
                                             <div>
                                                 <PhotoSlider className="Modal-PhotoSlider"
@@ -89,7 +96,8 @@ class PageItem extends Component {
                                     })}
                                 </div>
                                 {this.props.colors.map((color) => {
-                                    if (color.colorId === this.state.displayColor) {
+                                    if (color.colorId === this.state.color) {
+                                        this.setState.selectedColor = color.colorName;
                                         return (
                                             <div>
                                                 <p>{color.colorName}</p>
@@ -97,6 +105,18 @@ class PageItem extends Component {
                                         )
                                     }
                                 })}
+                                <div className="PageItem-SizeButton-Options">
+                                    {this.props.sizes.map((size) => {
+                                        return (
+                                            <div className="PageItem-SizeButton">
+                                                <SizeButton
+                                                    sizeId={size.sizeId}
+                                                    sizeValue={size.sizeValue}
+                                                    onClick={this.changeSize}
+                                                />
+                                            </div>)
+                                    })}
+                                </div>
                             </Col>
                             <Col>
                                 <p>{this.props.description}</p>
@@ -119,9 +139,9 @@ class PageItem extends Component {
 
 export let inCart = [];
 
+export let cartColors = [];
+
 export let cartTotal = 0;
 
 
 export default PageItem;
-
-/*<img src={this.props.img} style={{ width: '400px' }}></img>*/

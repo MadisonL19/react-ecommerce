@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { inCart, cartTotal } from '../PageItem/PageItem.js';
+import { inCart, cartTotal, cartColors } from '../PageItem/PageItem.js';
 import CartItem from '../CartItem/CartItem.js';
 import Products from '../../productData.js';
 import Navbar from '../../Navbar/Navbar.js';
 import Footer from '../../Footer/Footer.js';
 import CartImg from '../../Images/SVG/cart2.svg';
+
 
 class Cart extends Component {
     constructor(props) {
@@ -32,6 +33,7 @@ class Cart extends Component {
                     <h1>Shopping Cart</h1>
                     <div className="Cart-Items">
                         {Products.map((product) => {
+                            var productId = cartColors.find(item => item.item === product.id);
                             if (inCart.includes(product.id)) {
                                 return (
                                     <Row middle="xs" className="Cart-CartItem">
@@ -45,6 +47,24 @@ class Cart extends Component {
                                             /></Col>
                                         <Col xs={6}>
                                             <div className="Cart-CartOptions">
+                                                {product.colors.map((color) => {
+                                                    if (productId.color === color.colorId) {
+                                                        return (
+                                                            <div>
+                                                                <p>{color.colorName}</p>
+                                                            </div>
+                                                        )
+                                                    }
+                                                })}
+                                                {product.sizes.map((size) => {
+                                                    if (productId.size === size.sizeId) {
+                                                        return (
+                                                            <div>
+                                                                <p>{size.sizeValue}</p>
+                                                            </div>
+                                                        )
+                                                    }
+                                                })}
                                                 <button onClick={() => this.removeItem(product.id, product.price)}>Remove</button>
                                             </div></Col>
                                     </Row>

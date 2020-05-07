@@ -47,7 +47,39 @@ const Products = [
             img5: 'https://images.lululemon.com/is/image/lululemon/LW3DMSS_037013_5?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }
         ],
-        sizes: [0, 2, 4, 6, 8, 10, 12, 14],
+        sizes: [
+            {
+                sizeId: 1,
+                sizeValue: 0
+            },
+            {
+                sizeId: 2,
+                sizeValue: 2
+            },
+            {
+                sizeId: 3,
+                sizeValue: 4
+            },
+            {
+                sizeId: 4,
+                sizeValue: 6
+            },
+            {
+                sizeId: 5,
+                sizeValue: 8
+            },
+            {
+                sizeId: 6,
+                sizeValue: 10
+            },
+            {
+                sizeId: 7,
+                sizeValue: 12
+            },
+            {
+                sizeId: 8,
+                sizeValue: 14
+            }],
         hover1: 'https://images.lululemon.com/is/image/lululemon/LW3DMSS_043612_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
     },
     {
@@ -80,7 +112,39 @@ const Products = [
             colorImg: '',
             img1: 'https://images.lululemon.com/is/image/lululemon/LW1BSWS_0001_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }],
-        sizes: [0, 2, 4, 6, 8, 10, 12, 14],
+        sizes: [
+            {
+                sizeId: 1,
+                sizeValue: 0
+            },
+            {
+                sizeId: 2,
+                sizeValue: 2
+            },
+            {
+                sizeId: 3,
+                sizeValue: 4
+            },
+            {
+                sizeId: 4,
+                sizeValue: 6
+            },
+            {
+                sizeId: 5,
+                sizeValue: 8
+            },
+            {
+                sizeId: 6,
+                sizeValue: 10
+            },
+            {
+                sizeId: 7,
+                sizeValue: 12
+            },
+            {
+                sizeId: 8,
+                sizeValue: 14
+            }],
         hover1: 'https://images.lululemon.com/is/image/lululemon/LW1CRTS_0002_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
     },
     {
@@ -119,7 +183,39 @@ const Products = [
             img4: 'https://images.lululemon.com/is/image/lululemon/LW1BX8S_0002_4?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img5: 'https://images.lululemon.com/is/image/lululemon/LW1BX8S_0002_5?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }],
-        sizes: [0, 2, 4, 6, 8, 10, 12, 14],
+        sizes: [
+            {
+                sizeId: 1,
+                sizeValue: 0
+            },
+            {
+                sizeId: 2,
+                sizeValue: 2
+            },
+            {
+                sizeId: 3,
+                sizeValue: 4
+            },
+            {
+                sizeId: 4,
+                sizeValue: 6
+            },
+            {
+                sizeId: 5,
+                sizeValue: 8
+            },
+            {
+                sizeId: 6,
+                sizeValue: 10
+            },
+            {
+                sizeId: 7,
+                sizeValue: 12
+            },
+            {
+                sizeId: 8,
+                sizeValue: 14
+            }],
         hover1: 'https://images.lululemon.com/is/image/lululemon/LW1CK1S_044256_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
     },
     {
@@ -162,7 +258,39 @@ const Products = [
             img1: 'https://images.lululemon.com/is/image/lululemon/LW3DR6S_031691_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }
         ],
-        sizes: [0, 2, 4, 6, 8, 10, 12, 14],
+        sizes: [
+            {
+                sizeId: 1,
+                sizeValue: 0
+            },
+            {
+                sizeId: 2,
+                sizeValue: 2
+            },
+            {
+                sizeId: 3,
+                sizeValue: 4
+            },
+            {
+                sizeId: 4,
+                sizeValue: 6
+            },
+            {
+                sizeId: 5,
+                sizeValue: 8
+            },
+            {
+                sizeId: 6,
+                sizeValue: 10
+            },
+            {
+                sizeId: 7,
+                sizeValue: 12
+            },
+            {
+                sizeId: 8,
+                sizeValue: 14
+            }],
         hover1: 'https://images.lululemon.com/is/image/lululemon/LW3CHIS_0002_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
     },
     {
@@ -212,7 +340,39 @@ const Products = [
             img4: 'https://images.lululemon.com/is/image/lululemon/LW3DPPS_030437_4?$image_carousel$&wid=1280&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img5: 'https://images.lululemon.com/is/image/lululemon/LW3DPPS_030437_5?$image_carousel$&wid=1280&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }],
-        sizes: [0, 2, 4, 6, 8, 10, 12, 14],
+        sizes: [
+            {
+                sizeId: 1,
+                sizeValue: 0
+            },
+            {
+                sizeId: 2,
+                sizeValue: 2
+            },
+            {
+                sizeId: 3,
+                sizeValue: 4
+            },
+            {
+                sizeId: 4,
+                sizeValue: 6
+            },
+            {
+                sizeId: 5,
+                sizeValue: 8
+            },
+            {
+                sizeId: 6,
+                sizeValue: 10
+            },
+            {
+                sizeId: 7,
+                sizeValue: 12
+            },
+            {
+                sizeId: 8,
+                sizeValue: 14
+            }],
         hover1: 'https://images.lululemon.com/is/image/lululemon/LW3DPPS_0001_4?$image_carousel$&wid=1280&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
     },
     {
@@ -255,7 +415,39 @@ const Products = [
             img1: 'https://images.lululemon.com/is/image/lululemon/LW1BTOS_0001_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }
         ],
-        sizes: [0, 2, 4, 6, 8, 10, 12, 14],
+        sizes: [
+            {
+                sizeId: 1,
+                sizeValue: 0
+            },
+            {
+                sizeId: 2,
+                sizeValue: 2
+            },
+            {
+                sizeId: 3,
+                sizeValue: 4
+            },
+            {
+                sizeId: 4,
+                sizeValue: 6
+            },
+            {
+                sizeId: 5,
+                sizeValue: 8
+            },
+            {
+                sizeId: 6,
+                sizeValue: 10
+            },
+            {
+                sizeId: 7,
+                sizeValue: 12
+            },
+            {
+                sizeId: 8,
+                sizeValue: 14
+            }],
         hover1: 'https://images.lululemon.com/is/image/lululemon/LW1BUAS_033454_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
     },
     {
@@ -298,7 +490,39 @@ const Products = [
             img1: 'https://images.lululemon.com/is/image/lululemon/LW5BXJS_1966_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }
         ],
-        sizes: [0, 2, 4, 6, 8, 10, 12, 14],
+        sizes: [
+            {
+                sizeId: 1,
+                sizeValue: 0
+            },
+            {
+                sizeId: 2,
+                sizeValue: 2
+            },
+            {
+                sizeId: 3,
+                sizeValue: 4
+            },
+            {
+                sizeId: 4,
+                sizeValue: 6
+            },
+            {
+                sizeId: 5,
+                sizeValue: 8
+            },
+            {
+                sizeId: 6,
+                sizeValue: 10
+            },
+            {
+                sizeId: 7,
+                sizeValue: 12
+            },
+            {
+                sizeId: 8,
+                sizeValue: 14
+            }],
         hover1: 'https://images.lululemon.com/is/image/lululemon/LW5CQSS_045102_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
     },
     {
@@ -327,7 +551,39 @@ const Products = [
             img4: 'https://images.lululemon.com/is/image/lululemon/LW5CR9S_043989_4?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img5: 'https://images.lululemon.com/is/image/lululemon/LW5CR9S_043989_5?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }],
-        sizes: [0, 2, 4, 6, 8, 10, 12, 14],
+        sizes: [
+            {
+                sizeId: 1,
+                sizeValue: 0
+            },
+            {
+                sizeId: 2,
+                sizeValue: 2
+            },
+            {
+                sizeId: 3,
+                sizeValue: 4
+            },
+            {
+                sizeId: 4,
+                sizeValue: 6
+            },
+            {
+                sizeId: 5,
+                sizeValue: 8
+            },
+            {
+                sizeId: 6,
+                sizeValue: 10
+            },
+            {
+                sizeId: 7,
+                sizeValue: 12
+            },
+            {
+                sizeId: 8,
+                sizeValue: 14
+            }],
         hover1: 'https://images.lululemon.com/is/image/lululemon/LW5CR9S_043989_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
     },
     {
@@ -381,7 +637,39 @@ const Products = [
             img1: 'https://images.lululemon.com/is/image/lululemon/LW6AMYS_026083_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }
         ],
-        sizes: [2, 4, 6, 8, 10, 12, 14],
+        sizes: [
+            {
+                sizeId: 1,
+                sizeValue: 0
+            },
+            {
+                sizeId: 2,
+                sizeValue: 2
+            },
+            {
+                sizeId: 3,
+                sizeValue: 4
+            },
+            {
+                sizeId: 4,
+                sizeValue: 6
+            },
+            {
+                sizeId: 5,
+                sizeValue: 8
+            },
+            {
+                sizeId: 6,
+                sizeValue: 10
+            },
+            {
+                sizeId: 7,
+                sizeValue: 12
+            },
+            {
+                sizeId: 8,
+                sizeValue: 14
+            }],
         hover1: 'https://images.lululemon.com/is/image/lululemon/LW6AMYS_026950_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
     },
     {
@@ -438,7 +726,39 @@ const Products = [
             img1: 'https://images.lululemon.com/is/image/lululemon/LW6BAVS_0001_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }
         ],
-        sizes: [0, 2, 4, 6, 8, 10, 12, 14],
+        sizes: [
+            {
+                sizeId: 1,
+                sizeValue: 0
+            },
+            {
+                sizeId: 2,
+                sizeValue: 2
+            },
+            {
+                sizeId: 3,
+                sizeValue: 4
+            },
+            {
+                sizeId: 4,
+                sizeValue: 6
+            },
+            {
+                sizeId: 5,
+                sizeValue: 8
+            },
+            {
+                sizeId: 6,
+                sizeValue: 10
+            },
+            {
+                sizeId: 7,
+                sizeValue: 12
+            },
+            {
+                sizeId: 8,
+                sizeValue: 14
+            }],
         hover1: 'https://images.lululemon.com/is/image/lululemon/LW6BAVS_026083_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
     },
     {
@@ -477,7 +797,39 @@ const Products = [
             img4: 'https://images.lululemon.com/is/image/lululemon/LW5BPJS_031382_4?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img5: 'https://images.lululemon.com/is/image/lululemon/LW5BPJS_031382_5?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }],
-        sizes: [0, 2, 4, 6, 8, 10, 12, 14],
+        sizes: [
+            {
+                sizeId: 1,
+                sizeValue: 0
+            },
+            {
+                sizeId: 2,
+                sizeValue: 2
+            },
+            {
+                sizeId: 3,
+                sizeValue: 4
+            },
+            {
+                sizeId: 4,
+                sizeValue: 6
+            },
+            {
+                sizeId: 5,
+                sizeValue: 8
+            },
+            {
+                sizeId: 6,
+                sizeValue: 10
+            },
+            {
+                sizeId: 7,
+                sizeValue: 12
+            },
+            {
+                sizeId: 8,
+                sizeValue: 14
+            }],
         hover1: 'https://images.lululemon.com/is/image/lululemon/LW5BPJS_0001_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
     },
     {
@@ -512,7 +864,39 @@ const Products = [
             img2: 'https://images.lululemon.com/is/image/lululemon/LW5DADS_047310_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img3: 'https://images.lululemon.com/is/image/lululemon/LW5DADS_047310_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }],
-        sizes: [0, 2, 4, 6, 8, 10, 12, 14],
+        sizes: [
+            {
+                sizeId: 1,
+                sizeValue: 0
+            },
+            {
+                sizeId: 2,
+                sizeValue: 2
+            },
+            {
+                sizeId: 3,
+                sizeValue: 4
+            },
+            {
+                sizeId: 4,
+                sizeValue: 6
+            },
+            {
+                sizeId: 5,
+                sizeValue: 8
+            },
+            {
+                sizeId: 6,
+                sizeValue: 10
+            },
+            {
+                sizeId: 7,
+                sizeValue: 12
+            },
+            {
+                sizeId: 8,
+                sizeValue: 14
+            }],
         hover1: 'https://images.lululemon.com/is/image/lululemon/LW5DADS_047311_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
     },
     {
@@ -541,7 +925,39 @@ const Products = [
             img4: 'https://images.lululemon.com/is/image/lululemon/LW2BHSS_036303_3?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72',
             img5: 'https://images.lululemon.com/is/image/lululemon/LW2BHSS_036303_4?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }],
-        sizes: [2, 4, 6, 8, 10, 12, 14],
+        sizes: [
+            {
+                sizeId: 1,
+                sizeValue: 0
+            },
+            {
+                sizeId: 2,
+                sizeValue: 2
+            },
+            {
+                sizeId: 3,
+                sizeValue: 4
+            },
+            {
+                sizeId: 4,
+                sizeValue: 6
+            },
+            {
+                sizeId: 5,
+                sizeValue: 8
+            },
+            {
+                sizeId: 6,
+                sizeValue: 10
+            },
+            {
+                sizeId: 7,
+                sizeValue: 12
+            },
+            {
+                sizeId: 8,
+                sizeValue: 14
+            }],
         hover1: 'https://images.lululemon.com/is/image/lululemon/LW2BHSS_036303_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
     },
     {
@@ -591,7 +1007,39 @@ const Products = [
             img1: 'https://images.lululemon.com/is/image/lululemon/LW2670S_0001_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }
         ],
-        sizes: [2, 4, 6, 8, 10, 12, 14],
+        sizes: [
+            {
+                sizeId: 1,
+                sizeValue: 0
+            },
+            {
+                sizeId: 2,
+                sizeValue: 2
+            },
+            {
+                sizeId: 3,
+                sizeValue: 4
+            },
+            {
+                sizeId: 4,
+                sizeValue: 6
+            },
+            {
+                sizeId: 5,
+                sizeValue: 8
+            },
+            {
+                sizeId: 6,
+                sizeValue: 10
+            },
+            {
+                sizeId: 7,
+                sizeValue: 12
+            },
+            {
+                sizeId: 8,
+                sizeValue: 14
+            }],
         hover1: 'https://images.lululemon.com/is/image/lululemon/LW2C82S_022921_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
     },
     {
@@ -634,7 +1082,39 @@ const Products = [
             img1: 'https://images.lululemon.com/is/image/lululemon/LW2BLGS_0001_1?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
         }
         ],
-        sizes: [2, 4, 6, 8, 10, 12, 14],
+        sizes: [
+            {
+                sizeId: 1,
+                sizeValue: 0
+            },
+            {
+                sizeId: 2,
+                sizeValue: 2
+            },
+            {
+                sizeId: 3,
+                sizeValue: 4
+            },
+            {
+                sizeId: 4,
+                sizeValue: 6
+            },
+            {
+                sizeId: 5,
+                sizeValue: 8
+            },
+            {
+                sizeId: 6,
+                sizeValue: 10
+            },
+            {
+                sizeId: 7,
+                sizeValue: 12
+            },
+            {
+                sizeId: 8,
+                sizeValue: 14
+            }],
         hover1: 'https://images.lululemon.com/is/image/lululemon/LW2BLGS_037013_2?$image_carousel$&wid=1600&op_usm=0.5,2,10,0&fmt=webp&qlt=90,1&op_sharpen=0&resMode=sharp2&iccEmbed=0&printRes=72'
     }
 
