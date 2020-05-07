@@ -5,8 +5,7 @@ import CartItem from '../CartItem/CartItem.js';
 import Products from '../../productData.js';
 import Navbar from '../../Navbar/Navbar.js';
 import Footer from '../../Footer/Footer.js';
-
-console.log(inCart);
+import CartImg from '../../Images/SVG/cart2.svg';
 
 class Cart extends Component {
     constructor(props) {
@@ -29,6 +28,7 @@ class Cart extends Component {
             <div className="Page">
                 <Navbar />
                 <div className="Cart">
+                    <img src={CartImg}></img>
                     <h1>Shopping Cart</h1>
                     <div className="Cart-Items">
                         {Products.map((product) => {

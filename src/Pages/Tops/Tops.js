@@ -4,13 +4,14 @@ import Products from '../../productData.js';
 import './Tops.css';
 import Navbar from '../../Navbar/Navbar.js';
 import Footer from '../../Footer/Footer.js';
+import TopsImg from '../../Images/SVG/womens.svg';
 
 class Tops extends Component {
     render() {
         return (
             <div className="Page">
                 <Navbar />
-                <h1>Tops</h1>
+                <img src={TopsImg}></img>
                 <div className="Page-PageContent">
                     {Products.map((product) => {
                         if (product.category === "tops") {

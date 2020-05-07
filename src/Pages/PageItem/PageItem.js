@@ -43,14 +43,14 @@ class PageItem extends Component {
     render() {
         return (
             <div className="item">
-                <Card style={{ width: '18rem' }} onClick={this.handleShow}>
-                    <Card.Img variant="top" src={this.props.img} />
-                    <Card.Body>
-                        <Card.Title>{this.props.name}</Card.Title>
-                        <Card.Text>
+                <Card style={{ minWidth: '18rem' }} className="PageItem-Card" onClick={this.handleShow}>
+                    <Card.Img className="PageItem-Card-Img" variant="top" src={this.props.img} />
+                    <Card.Body className="PageItem-Card-Body">
+                        <Card.Title className="PageItem-Title">{this.props.name}</Card.Title>
+                        <Card.Text className="PageItem-Price">
                             {this.props.price}
                         </Card.Text>
-                        <button>Quick View</button>
+                        <button className="PageItem-Button">Quick View</button>
                     </Card.Body>
                 </Card>
                 <Modal dialogClassName="custom-dialog" show={this.state.show} onHide={this.handleClose}>

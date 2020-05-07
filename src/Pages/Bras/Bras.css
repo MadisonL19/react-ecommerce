@@ -1,10 +1,23 @@
 .Page-PageContent {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
     width: 80%;
     margin: 0 auto;
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr !important;
+    grid-gap: 2em;
 }
 
 .Page {
     text-align: center;
+}
+
+@media only screen and (max-width: 900px) {
+    .Page-PageContent {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 10%;
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        grid-gap: 2em;
+    }
 }

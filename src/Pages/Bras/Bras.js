@@ -4,13 +4,14 @@ import Products from '../../productData.js';
 import './Bras.css';
 import Navbar from '../../Navbar/Navbar.js';
 import Footer from '../../Footer/Footer.js';
+import BrasImg from '../../Images/SVG/bras.svg';
 
 class Bras extends Component {
     render() {
         return (
             <div className="Page">
                 <Navbar />
-                <h1>Sports Bras</h1>
+                <img src={BrasImg}></img>
                 <div className="Page-PageContent">
                     {Products.map((product) => {
                         if (product.category === "bras") {

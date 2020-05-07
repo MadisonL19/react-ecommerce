@@ -332,7 +332,7 @@ const Products = [
     },
     {
         id: 9,
-        name: "All the Right Places Crop 23\x22",
+        name: "All the Right Places High-Rise Crop 23\x22",
         purpose: 'Designed for Running',
         desc_heading: 'Sweat-wicking, Luxtreme Fabric',
         description: "Designed with breathable, sweat-wicking Luxtreme Fabric for a smooth, cool feel. With added Lycra fibre, this pants offer a four-way stretch and superior shape.",
@@ -443,7 +443,7 @@ const Products = [
     },
     {
         id: 11,
-        name: "Dance Queen Studio Jogger",
+        name: "Dance Queen Relaxed Studio Jogger",
         purpose: 'Designed for On the Move',
         desc_heading: 'Lightweight, Swift Fabric',
         description: "Designed with our lightweight, Swift Fabric for a breathable, two-way stretch.",
@@ -482,7 +482,7 @@ const Products = [
     },
     {
         id: 12,
-        name: "LA Sweat Pant 26\x22",
+        name: "LA Sweat Pant High-Rise Crop 26\x22",
         purpose: 'Designed for On the Move',
         desc_heading: 'Soft, Cotton Blend',
         description: "Designed with our soft Cotton blend for a naturally breathable, soft experience.",
