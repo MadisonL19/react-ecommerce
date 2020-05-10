@@ -1,5 +1,6 @@
 //Dependencies
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import { Card, Button, Modal, Row, Container, Col } from 'react-bootstrap';
 import PhotoSlider from '../../PhotoSlider/PhotoSlider.js';
 import './PageItem.css';
@@ -127,6 +128,7 @@ class PageItem extends Component {
                         <Button variant="secondary" onClick={this.handleClose}>
                             Close
           </Button>
+                        <Link to={`/products/${this.props.id}`}><Button variant="secondary">See More</Button></Link>
                         <Button variant="primary" onClick={this.addItem}>
                             Add to Cart
           </Button>
@@ -142,6 +144,10 @@ export let inCart = [];
 export let cartColors = [];
 
 export let cartTotal = 0;
+
+export const updateTotal = function (total) {
+    cartTotal = total;
+}
 
 
 export default PageItem;

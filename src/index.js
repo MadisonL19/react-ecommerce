@@ -7,6 +7,7 @@ import Tops from './Pages/Tops/Tops.js';
 import Bottoms from './Pages/Bottoms/Bottoms.js';
 import Bras from './Pages/Bras/Bras.js';
 import Cart from './Pages/Cart/Cart.js';
+import ProductSpecific from './Pages/ProductSpecific/ProductSpecific.js';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 
@@ -33,8 +34,11 @@ ReactDOM.render(
       <Route exact path="/bottoms" component={Bottoms} />
       <Route exact path="/bras" component={Bras} />
       <Route exact path="/cart" component={Cart} />
+      <Route exact path="/products/:id" component={ProductSpecific} />
     </Switch>
   </BrowserRouter>
 
   , document.getElementById('root'));
 serviceWorker.unregister();
+
+// <Route exact path="/products/:id" component={ProductSpecific} />

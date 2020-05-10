@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Row } from 'react-bootstrap';
-import { inCart, cartTotal, cartColors } from '../PageItem/PageItem.js';
+import { inCart, cartColors, cartTotal, updateTotal } from '../PageItem/PageItem.js';
+import { pageCartTotal, updateProductTotal } from '../ProductSpecific/ProductSpecific.js';
 import CartItem from '../CartItem/CartItem.js';
 import Products from '../../productData.js';
 import Navbar from '../../Navbar/Navbar.js';
@@ -13,14 +14,16 @@ class Cart extends Component {
         super(props);
         this.state = {
             cartList: inCart,
-            finalTotal: cartTotal.toFixed(2)
+            finalTotal: (cartTotal + pageCartTotal)
         }
     }
 
     removeItem(itemId, itemPrice) {
         var itemIndex = this.state.cartList.indexOf(itemId);
         var newList = inCart.splice(itemIndex, 1);
-        var newTotal = (this.state.finalTotal - itemPrice).toFixed(2);
+        var newTotal = (this.state.finalTotal - itemPrice);
+        updateTotal(newTotal);
+        updateProductTotal(newTotal);
         this.setState({ cartList: newList, finalTotal: newTotal });
     }
 
@@ -73,7 +76,9 @@ class Cart extends Component {
                         })}
                     </div>
                     <div className="Cart-Total">
-                        <h1>{this.state.finalTotal}</h1>
+                        <h1>{
+                            this.state.finalTotal < 0 ? "0.00" :
+                                this.state.finalTotal.toFixed(2)}</h1>
                     </div>
                 </div>
                 <Footer />
