@@ -2,5 +2,15 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
-    width: 200px;
+    width: 100px;
+    padding-left: 0px;
+    margin-top: 10px;
+}
+
+.link-list {
+    padding: 0px;
+}
+
+.footer-nav-link {
+    padding: 0px;
 }

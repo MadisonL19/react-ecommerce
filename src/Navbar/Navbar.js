@@ -15,11 +15,12 @@ const navbar = () => (
                 <Link className="nav-link" to="/bottoms">Bottoms</Link>
                 <Link className="nav-link" to="/bras">Sports Bras</Link>
             </Nav>
-            <Form inline>
+            <Form className="Navbar-search" inline>
                 <FormControl type="text" placeholder="Search" className="mr-sm-2" />
                 <Button variant="outline-primary">Search</Button>
             </Form>
-            <Link to="/cart"><Button id="shopping-cart-icon"><ShoppingCartIcon></ShoppingCartIcon></Button></Link>
+            <br></br>
+            <Link id="shopping-cart-link" to="/cart"><Button id="shopping-cart-icon"><ShoppingCartIcon></ShoppingCartIcon></Button></Link>
         </Navbar.Collapse>
     </Navbar>
 );

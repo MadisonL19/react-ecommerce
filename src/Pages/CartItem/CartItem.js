@@ -15,7 +15,7 @@ class CartItem extends Component {
                             {this.props.description}
                         </Card.Text>
                         <Card.Text>
-                            {this.props.price}
+                            ${this.props.price}
                         </Card.Text>
                     </Card.Body>
                 </Card>

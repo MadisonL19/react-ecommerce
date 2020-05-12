@@ -6,7 +6,7 @@ import Products from '../../productData.js';
 import './TopsPageAlice.css';
 import AliceItem from '../AliceItem/AliceItem.js';
 
-class TopsPageAlice extends React.Component {
+class SuggestedAlice extends React.Component {
 
     render() {
         var settings = {
@@ -22,7 +22,7 @@ class TopsPageAlice extends React.Component {
             <div className='PageAlice'>
                 <Slider {...settings}>
                     {Products.map((product) => {
-                        if (product.category === "tops" && product.highlight === true) {
+                        if (product.category === this.props.aliceCategory && product.type === this.props.aliceType && product.name !== this.props.currentName) {
                             return (
                                 <div className="gallery-item">
                                     <AliceItem
@@ -42,4 +42,4 @@ class TopsPageAlice extends React.Component {
 }
 
 
-export default TopsPageAlice;
+export default SuggestedAlice;

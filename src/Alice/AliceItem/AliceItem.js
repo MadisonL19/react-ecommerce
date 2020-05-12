@@ -10,7 +10,7 @@ class AliceItem extends Component {
                 <Card style={{ width: '18rem', height: '30rem' }} className="AliceItem-Card">
                     <Card.Img variant="top" src={this.props.img} />
                     <Card.Body>
-                        <Link to={`/${this.props.category}`}><Card.Title>{this.props.name}</Card.Title>
+                        <Link to={`/products/${this.props.id}`}><Card.Title>{this.props.name}</Card.Title>
                             <Card.Text>
                                 {this.props.price}
                             </Card.Text></Link>

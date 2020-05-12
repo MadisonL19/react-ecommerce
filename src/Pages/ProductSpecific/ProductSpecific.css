@@ -6,11 +6,7 @@
     display: inline-block;
 }
 
-.similar-products-options {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.similar-product-img img {
-    max-width: 240px;
+.ProductSpecific-Images-Options {
+    max-width: 640px;
+    margin: 0 auto;
 }

@@ -5,7 +5,7 @@ const SizeButton = (props) => (
     <div>
         <button className="SizeButton"
             key={props.sizeId}
-            onClick={() => props.onClick(props.sizeId)}
+            onClick={() => props.onClick(props.sizeValue)}
         >{props.sizeValue}</button>
     </div>
 );

@@ -16,21 +16,37 @@ class PageItem extends Component {
         this.addItem = this.addItem.bind(this);
         this.changeColor = this.changeColor.bind(this);
         this.changeSize = this.changeSize.bind(this);
+        this.staticImg = this.staticImg.bind(this);
+        this.hoverImg = this.hoverImg.bind(this);
 
         this.state = {
             show: false,
+            showQuickView: 'hidden',
             color: 1,
             selectedColor: '',
-            size: 0
+            selectedSize: 0,
+            size: 0,
+            colorSelected: false,
+            sizeSelected: false,
+            itemImg: this.props.img,
+            imgOpacity: 1
         };
     }
 
-    changeColor(colorId) {
-        this.setState({ color: colorId });
+    staticImg() {
+        this.setState({ itemImg: this.props.img, showQuickView: 'hidden', imgOpacity: 1 });
     }
 
-    changeSize(sizeId) {
-        this.setState({ size: sizeId });
+    hoverImg() {
+        this.setState({ itemImg: this.props.hover1, showQuickView: 'visible', imgOpacity: 0.7 });
+    }
+
+    changeColor(colorId) {
+        this.setState({ color: colorId, colorSelected: true });
+    }
+
+    changeSize(sizeValue) {
+        this.setState({ size: sizeValue, sizeSelected: true });
     }
 
     handleClose() {
@@ -42,23 +58,33 @@ class PageItem extends Component {
     }
 
     addItem() {
-        inCart.push(this.props.id);
-        cartColors.push({ item: this.props.id, color: this.state.color, size: this.state.size });
-        cartTotal += (this.props.price);
-        this.setState({ show: false });
+        if (this.state.colorSelected && this.state.sizeSelected) {
+            inCart.push(this.props.id);
+            cartColors.push({ item: this.props.id, color: this.state.color, size: this.state.size });
+            cartTotal += (this.props.price);
+            this.setState({ show: false });
+        } else if (!this.state.colorSelected && this.state.sizeSelected) {
+            alert("Please select a color.");
+        }
+        else if (this.state.colorSelected && !this.state.sizeSelected) {
+            alert("Please select a size.");
+        }
+        else {
+            alert("Please select a size and color.");
+        }
     }
 
     render() {
         return (
             <div className="item">
-                <Card style={{ minWidth: '18rem' }} className="PageItem-Card" onClick={this.handleShow}>
-                    <Card.Img className="PageItem-Card-Img" variant="top" src={this.props.img} />
+                <Card onMouseEnter={this.hoverImg} onMouseLeave={this.staticImg} style={{ minWidth: '18rem' }} className="PageItem-Card">
+                    <Card.Img className="PageItem-Card-Img" variant="top" style={{ opacity: this.state.imgOpacity }} src={this.state.itemImg} />
+                    <Card.ImgOverlay className="PageItem-Card-Img-Overlay" style={{ visibility: this.state.showQuickView }}><Button className="PageItem-QuickView-Button" onClick={this.handleShow}>Quick View</Button></Card.ImgOverlay>
                     <Card.Body className="PageItem-Card-Body">
                         <Card.Title className="PageItem-Title">{this.props.name}</Card.Title>
                         <Card.Text className="PageItem-Price">
-                            {this.props.price}
+                            ${this.props.price}
                         </Card.Text>
-                        <button className="PageItem-Button">Quick View</button>
                     </Card.Body>
                 </Card>
                 <Modal dialogClassName="custom-dialog" show={this.state.show} onHide={this.handleClose}>
@@ -82,6 +108,18 @@ class PageItem extends Component {
                                         )
                                     }
                                 })}
+                                <div className="PageItem-ColorSelected">
+                                    {this.props.colors.map((color) => {
+                                        if (color.colorId === this.state.color) {
+                                            this.setState.selectedColor = color.colorName;
+                                            return (
+                                                <div>
+                                                    <h5><strong>Color:</strong> {color.colorName}</h5>
+                                                </div>
+                                            )
+                                        }
+                                    })}
+                                </div>
                                 <div className="PageItem-ColorButton-Options">
                                     {this.props.colors.map((color) => {
                                         return (
@@ -96,16 +134,17 @@ class PageItem extends Component {
                                             </div>)
                                     })}
                                 </div>
-                                {this.props.colors.map((color) => {
-                                    if (color.colorId === this.state.color) {
-                                        this.setState.selectedColor = color.colorName;
-                                        return (
-                                            <div>
-                                                <p>{color.colorName}</p>
-                                            </div>
-                                        )
-                                    }
-                                })}
+                                <div className="PageItem-SizeSelected">
+                                    {this.props.sizes.map((size) => {
+                                        if (size.sizeValue === this.state.size) {
+                                            return (
+                                                <div>
+                                                    <h5><strong>Size:</strong> {this.state.size}</h5>
+                                                </div>
+                                            )
+                                        }
+                                    })}
+                                </div>
                                 <div className="PageItem-SizeButton-Options">
                                     {this.props.sizes.map((size) => {
                                         return (
@@ -119,15 +158,13 @@ class PageItem extends Component {
                                     })}
                                 </div>
                             </Col>
-                            <Col>
+                            <Col className="PageItem-Info">
+                                <h5>Description</h5>
                                 <p>{this.props.description}</p>
                             </Col>
                         </Row>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button variant="secondary" onClick={this.handleClose}>
-                            Close
-          </Button>
                         <Link to={`/products/${this.props.id}`}><Button variant="secondary">See More</Button></Link>
                         <Button variant="primary" onClick={this.addItem}>
                             Add to Cart

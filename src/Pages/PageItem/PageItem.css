@@ -10,3 +10,28 @@
 .PageItem-SizeButton {
     display: inline-block;
 }
+
+.PageItem-ColorSelected {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.PageItem-SizeSelected {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.PageItem-Info {
+    margin-top: 15px;
+}
+
+.PageItem-Info h5 {
+    margin-bottom: 15px;
+}
+
+.PageItem-QuickView-Button {
+    font-size: calc(10px + 0.7vw);
+    margin-top: 60%;
+}

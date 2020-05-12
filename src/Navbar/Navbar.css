@@ -6,3 +6,7 @@
 #shopping-cart-icon {
     margin-left: 10px;
 }
+
+.form-inline {
+    display: block;
+}

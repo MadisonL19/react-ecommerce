@@ -21,20 +21,20 @@ const Footer = () => {
                     </MDBCol>
                     <MDBCol md="6">
                         <h5 className="title">Links</h5>
-                        <ul>
-                            <Link className="nav-link" to="/tops">Tops</Link>
-                            <Link className="nav-link" to="/bottoms">Bottoms</Link>
-                            <Link className="nav-link" to="/bras">Sports Bras</Link>
+                        <ul className="link-list">
+                            <li className="list-unstyled"><Link className="footer-nav-link" to="/tops">Tops</Link></li>
+                            <li className="list-unstyled"><Link className="footer-nav-link" to="/bottoms">Bottoms</Link></li>
+                            <li className="list-unstyled"><Link className="footer-nav-link" to="/bras">Sports Bras</Link></li>
                         </ul>
                     </MDBCol>
                 </MDBRow>
             </MDBContainer>
             <div className="footer-copyright text-center py-3">
                 <MDBContainer fluid>
-                    &copy; {new Date().getFullYear()} Copyright: <a href="https://www.mdbootstrap.com"> MDBootstrap.com </a>
+                    &copy; {new Date().getFullYear()} Copyright: Madison Leopold
                 </MDBContainer>
             </div>
-        </MDBFooter>
+        </MDBFooter >
     );
 }
 

@@ -76,7 +76,7 @@ class Cart extends Component {
                         })}
                     </div>
                     <div className="Cart-Total">
-                        <h1>{
+                        <h1>${
                             this.state.finalTotal < 0 ? "0.00" :
                                 this.state.finalTotal.toFixed(2)}</h1>
                     </div>
