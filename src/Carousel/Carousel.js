@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Carousel } from 'react-bootstrap';
 import Luxtreme from '../Images/SVG/luxtreme.svg';
 import Ebb from '../Images/SVG/ebb2.svg';
@@ -14,7 +15,7 @@ const carousel = () => (
                     src={Luxtreme}
                     alt="First slide" />
                 <Carousel.Caption>
-                    <button class="carousel-button">Shop Now</button>
+                    <Link to='products/7'><button class="carousel-button">Shop Now</button></Link>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -25,7 +26,7 @@ const carousel = () => (
                 />
 
                 <Carousel.Caption>
-                    <button class="carousel-button">Shop Now</button>
+                    <Link to='tops'><button class="carousel-button">Shop Now</button></Link>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -36,7 +37,7 @@ const carousel = () => (
                 />
 
                 <Carousel.Caption>
-                    <button class="carousel-button">Shop Now</button>
+                    <Link to='products/15'><button class="carousel-button">Shop Now</button></Link>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>

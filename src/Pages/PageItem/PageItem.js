@@ -1,6 +1,6 @@
 //Dependencies
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { Card, Button, Modal, Row, Container, Col } from 'react-bootstrap';
 import PhotoSlider from '../../PhotoSlider/PhotoSlider.js';
 import './PageItem.css';
@@ -18,6 +18,7 @@ class PageItem extends Component {
         this.changeSize = this.changeSize.bind(this);
         this.staticImg = this.staticImg.bind(this);
         this.hoverImg = this.hoverImg.bind(this);
+        this.renderFullView = this.renderFullView.bind(this);
 
         this.state = {
             show: false,
@@ -29,8 +30,15 @@ class PageItem extends Component {
             colorSelected: false,
             sizeSelected: false,
             itemImg: this.props.img,
-            imgOpacity: 1
+            imgOpacity: 1,
+            renderFullView: false
         };
+    }
+
+    renderFullView(e) {
+        if (e.target === e.currentTarget) {
+            this.setState({ renderFullView: true })
+        }
     }
 
     staticImg() {
@@ -75,11 +83,16 @@ class PageItem extends Component {
     }
 
     render() {
+        {
+            if (this.state.renderFullView) {
+                return (<Redirect to={`/products/${this.props.id}`} />);
+            }
+        }
         return (
             <div className="item">
                 <Card onMouseEnter={this.hoverImg} onMouseLeave={this.staticImg} style={{ minWidth: '18rem' }} className="PageItem-Card">
                     <Card.Img className="PageItem-Card-Img" variant="top" style={{ opacity: this.state.imgOpacity }} src={this.state.itemImg} />
-                    <Card.ImgOverlay className="PageItem-Card-Img-Overlay" style={{ visibility: this.state.showQuickView }}><Button className="PageItem-QuickView-Button" onClick={this.handleShow}>Quick View</Button></Card.ImgOverlay>
+                    <Card.ImgOverlay onClick={(e) => this.renderFullView(e)} className="PageItem-Card-Img-Overlay" style={{ visibility: this.state.showQuickView }}><Button id="PageItem-QuickView-Button" className="PageItem-QuickView-Button" onClick={this.handleShow}>Quick View</Button></Card.ImgOverlay>
                     <Card.Body className="PageItem-Card-Body">
                         <Card.Title className="PageItem-Title">{this.props.name}</Card.Title>
                         <Card.Text className="PageItem-Price">

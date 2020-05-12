@@ -73,7 +73,7 @@ class ProductSpecific extends Component {
         return (
             <div className="ProductSpecific-Page">
                 <Navbar />
-                <Link to="/tops">Back to Tops</Link>
+                <Link to="/tops">Back to <span style={{ textTransform: 'capitalize' }}>{currentProduct.category}</span></Link>
                 <div className="ProductSpecific-Item">
                     <div className="ProductSpecific-container">
                         <Row>
