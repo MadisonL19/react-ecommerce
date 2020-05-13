@@ -8,11 +8,11 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <MDBFooter color="blue" className="font-small pt-4 mt-4">
+        <MDBFooter color="blue" id="footer" className="font-small pt-4 mt-4">
             <MDBContainer fluid className="text-center text-md-left">
                 <MDBRow>
                     <MDBCol md="6">
-                        <h5 className="title">Connect With Us</h5>
+                        <h5 id="footer-title" className="title">Connect With Us</h5>
                         <ul className="social-list">
                             <li className="social-icon"><a><InstagramIcon fontSize="large" className="MuiIcon-fontSizeLarge" /></a></li>
                             <li className="social-icon"><a><TwitterIcon fontSize="large" className="MuiIcon-fontSizeLarge" /></a></li>

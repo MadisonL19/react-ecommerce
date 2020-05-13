@@ -6,7 +6,151 @@
     display: inline-block;
 }
 
+.ProductSpecific-ColorSelected {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.ProductSpecific-SizeSelected {
+    margin-top: 15px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
 .ProductSpecific-Images-Options {
     max-width: 640px;
     margin: 0 auto;
 }
+
+.ProductSpecific-Page-Container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} 
+
+.ProductSpecific-Info {
+    margin-left: 50px;
+}
+
+#currentProduct-name {
+    margin-bottom: 1.5vw;
+}
+
+#currentProduct-purpose {
+    margin-bottom: 1.5vw;
+}
+
+#currentProduct-descHeading {
+    margin-bottom: 1.5vw;
+}
+
+#currentProduct-price {
+    margin-bottom: 1.5vw;
+}
+
+#currentProduct-desc {
+    margin-bottom: 1.5vw;
+}
+
+#currentProduct-fit {
+    margin-bottom: 1.5vw;
+}
+
+#currentProduct-material {
+    margin-bottom: 1.5vw;
+}
+
+#currentProduct-care-items {
+    margin-bottom: 2vw;
+}
+
+.ProductSpecific-Care {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#ProductSpecific-Cart-Button {
+    margin-top: 2vw;
+    margin-bottom: 15vw;
+}
+
+.similar-products {
+    margin-top: 5%;
+    background-color: rgba(240, 240, 240, 0.2);
+}
+
+.similar-products h2{
+   text-align: center;
+   padding-top: 5%;
+   margin-bottom: 5%;
+}
+
+.similar-products-container {
+    width: 89%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+
+@media only screen and (max-width: 992px) {
+    .ProductSpecific-Page-Container {
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+    } 
+
+    .ProductSpecific-Info {
+        max-width: 640px;
+        margin-left: calc((100% - 600px)/2);
+    }
+
+    #currentProduct-name {
+        margin-bottom: 2vw;
+    }
+    
+    #currentProduct-purpose {
+        margin-bottom: 2vw;
+    }
+    
+    #currentProduct-descHeading {
+        margin-bottom: 2vw;
+    }
+    
+    #currentProduct-price {
+        margin-bottom: 2vw;
+    }
+    
+    #currentProduct-desc {
+        margin-bottom: 2vw;
+    }
+    
+    #currentProduct-fit {
+        margin-bottom: 2vw;
+    }
+    
+    #currentProduct-material {
+        margin-bottom: 2vw;
+    }
+
+    #currentProduct-care-items {
+        margin-bottom: 2vw;
+    }
+
+    .ProductSpecific-Care {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #ProductSpecific-Cart-Button {
+        width: 90%;
+        margin-top: 3vw;
+        margin-bottom: 15vw;
+    }
+
+    .similar-products {
+        display: none;
+    }
+}
+

@@ -2,6 +2,7 @@ import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import './PhotoSlider.css';
 
+
 const PhotoSlider = (props) => (
     <div className="PhotoSlider">
         <Carousel>
