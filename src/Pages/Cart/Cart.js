@@ -13,9 +13,11 @@ import './Cart.css';
 class Cart extends Component {
     constructor(props) {
         super(props);
+
         this.state = {
             cartList: inCart,
-            finalTotal: (cartTotal + pageCartTotal)
+            finalTotal: (cartTotal + pageCartTotal),
+            totalWithShip: (cartTotal + pageCartTotal) + 5
         }
     }
 
@@ -25,7 +27,7 @@ class Cart extends Component {
         var newTotal = (this.state.finalTotal - itemPrice);
         updateTotal(newTotal);
         updateProductTotal(newTotal);
-        this.setState({ cartList: newList, finalTotal: newTotal });
+        this.setState({ cartList: newList, finalTotal: newTotal, totalWithShip: newTotal + 5 });
     }
 
     render() {
@@ -34,13 +36,13 @@ class Cart extends Component {
                 <Navbar />
                 <div className="Cart">
                     <img src={CartImg}></img>
-                    <h1>Shopping Cart</h1>
+                    <h3 id="Shopping-Bag-Title">Shopping Bag</h3>
                     <div className="Cart-Items">
                         {Products.map((product) => {
                             var productId = cartColors.find(item => item.item === product.id);
                             if (inCart.includes(product.id)) {
                                 return (
-                                    <Row middle="xs" className="Cart-CartItem">
+                                    <Row className="Cart-CartItem">
                                         <div className="Cart-Container">
                                             <Col className="Cart-Col">
                                                 <CartItem
@@ -70,9 +72,11 @@ class Cart extends Component {
                                                             )
                                                         }
                                                     })}
-                                                    <p>${product.price}</p>
-                                                    <button onClick={() => this.removeItem(product.id, product.price)}>Remove</button>
                                                 </div>
+                                            </Col>
+                                            <Col className="Cart-Col-Price-Buttons">
+                                                <p className="Cart-ProductPrice">${product.price}</p>
+                                                <button className="Cart-Remove" onClick={() => this.removeItem(product.id, product.price)}>Remove</button>
                                             </Col>
                                         </div>
                                     </Row>
@@ -81,9 +85,23 @@ class Cart extends Component {
                         })}
                     </div>
                     <div className="Cart-Total">
-                        <h1>${
-                            this.state.finalTotal < 0 ? "0.00" :
-                                this.state.finalTotal.toFixed(2)}</h1>
+                        <h4 id="Cart-Total-Title">Total</h4>
+                        <div className="Item-Subtotal">
+                            <h6 id="Item-Subtotal-Title">Item Subtotal:</h6>
+                            <h6 id="Item-Subtotal">${
+                                this.state.finalTotal < 0 ? "0.00" :
+                                    this.state.finalTotal.toFixed(2)}</h6>
+                        </div>
+                        <div className="Shipping">
+                            <h6 id="Estimated-Shipping-Title">Estimated Shipping:</h6>
+                            <h6 id="Estimated-Shipping-Price">$5.00</h6>
+                        </div>
+                        <div className="Estimated-Total">
+                            <h6 id="Estimated-Total-Title">Estimated Total:</h6>
+                            <h6 id="Estimated-Total-Price">${
+                                this.state.totalWithShip < 6 ? "0.00" :
+                                    this.state.totalWithShip.toFixed(2)}</h6>
+                        </div>
                     </div>
                 </div>
                 <Footer />

@@ -1,10 +1,25 @@
-.Cart-Container {
-    width: 80%;
+#Shopping-Bag-Title {
+    text-align: left;
+    width: 90%;
     margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.Cart-Container {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
+
+.Cart-CartItem:first-of-type {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
 }
 
 .Cart-CartItem {
-    border-top: 1px solid rgba(0, 0, 0, 0.3);
     border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 
 }
@@ -19,7 +34,18 @@
 .Cart-Col {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
-    width: 500px;
+    width: 450px;
+}
+
+.Cart-Col-Price-Buttons {
+    display: grid;
+    justify-self: end;
+    grid-template-columns: 1fr 0.1fr;
+    margin-top: 25px;
+}
+
+.Cart-Col-Price-Buttons button{
+    height: 30px;
 }
 
 
@@ -37,4 +63,66 @@
 .Cart-CartOptions-Detail p{
     padding-bottom: 8px;
     margin: 0;
+}
+
+.Cart-ProductPrice {
+    justify-self: end;
+    margin-right: 10px;
+}
+
+.Cart-Remove {
+    justify-self: end;
+}
+
+#Cart-Total-Title {
+    text-align: left;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.Item-Subtotal {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#Item-Subtotal-Title {
+    text-align: left;
+}
+
+#Item-Subtotal {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.Shipping {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#Estimated-Shipping-Title {
+    text-align: left;
+}
+
+#Estimated-Shipping-Price {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.Estimated-Total {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#Estimated-Total-Title {
+    text-align: left;
+}
+
+#Estimated-Total-Price {
+    margin-left: 20px;
+    text-align: left;
 }
