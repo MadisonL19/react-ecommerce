@@ -1,0 +1,5 @@
+#CartItem-Img {
+    width: calc(130px + 5vw);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

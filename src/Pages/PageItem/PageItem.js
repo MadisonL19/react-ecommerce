@@ -174,6 +174,8 @@ class PageItem extends Component {
                             <Col className="PageItem-Info">
                                 <h5>Description</h5>
                                 <p>{this.props.description}</p>
+                                <br></br>
+                                <h5>Price: ${this.props.price}</h5>
                             </Col>
                         </Row>
                     </Modal.Body>

@@ -1,4 +1,40 @@
+.Cart-Container {
+    width: 80%;
+    margin: 0 auto;
+}
+
 .Cart-CartItem {
-    display: flex;
-    align-items: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+
+}
+
+#CartItem-Title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: calc(12px + 0.5vw);
+    text-align: center;
+}
+
+.Cart-Col {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    width: 500px;
+}
+
+
+.CartItem-Item {
+    justify-self: start;
+}
+
+.Cart-CartOptions {
+    margin-top: 25px;
+    margin-left: 25px;
+    justify-self: start;
+    text-align: left;
+}
+
+.Cart-CartOptions-Detail p{
+    padding-bottom: 8px;
+    margin: 0;
 }

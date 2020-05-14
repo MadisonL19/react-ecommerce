@@ -7,6 +7,7 @@ import Products from '../../productData.js';
 import Navbar from '../../Navbar/Navbar.js';
 import Footer from '../../Footer/Footer.js';
 import CartImg from '../../Images/SVG/cart2.svg';
+import './Cart.css';
 
 
 class Cart extends Component {
@@ -40,36 +41,40 @@ class Cart extends Component {
                             if (inCart.includes(product.id)) {
                                 return (
                                     <Row middle="xs" className="Cart-CartItem">
-                                        <Col xs={6}>
-                                            <CartItem
-                                                id={product.id}
-                                                name={product.name}
-                                                img={product.img}
-                                                description={product.description}
-                                                price={product.price}
-                                            /></Col>
-                                        <Col xs={6}>
-                                            <div className="Cart-CartOptions">
-                                                {product.colors.map((color) => {
-                                                    if (productId.color === color.colorId) {
-                                                        return (
-                                                            <div>
-                                                                <p>{color.colorName}</p>
-                                                            </div>
-                                                        )
-                                                    }
-                                                })}
-                                                {product.sizes.map((size) => {
-                                                    if (productId.size === size.sizeId) {
-                                                        return (
-                                                            <div>
-                                                                <p>{size.sizeValue}</p>
-                                                            </div>
-                                                        )
-                                                    }
-                                                })}
-                                                <button onClick={() => this.removeItem(product.id, product.price)}>Remove</button>
-                                            </div></Col>
+                                        <div className="Cart-Container">
+                                            <Col className="Cart-Col">
+                                                <CartItem
+                                                    id={product.id}
+                                                    name={product.name}
+                                                    img={product.img}
+                                                    description={product.description}
+                                                    price={product.price}
+                                                />
+                                                <div className="Cart-CartOptions">
+                                                    <h6 id="Cart-CartItem-Title">{product.name}</h6>
+                                                    {product.colors.map((color) => {
+                                                        if (productId.color === color.colorId) {
+                                                            return (
+                                                                <div className="Cart-CartOptions-Detail">
+                                                                    <p>Color: {color.colorName}</p>
+                                                                </div>
+                                                            )
+                                                        }
+                                                    })}
+                                                    {product.sizes.map((size) => {
+                                                        if (productId.size === size.sizeId) {
+                                                            return (
+                                                                <div className="Cart-CartOptions-Detail">
+                                                                    <p>Size: {size.sizeValue}</p>
+                                                                </div>
+                                                            )
+                                                        }
+                                                    })}
+                                                    <p>${product.price}</p>
+                                                    <button onClick={() => this.removeItem(product.id, product.price)}>Remove</button>
+                                                </div>
+                                            </Col>
+                                        </div>
                                     </Row>
                                 )
                             }
@@ -82,7 +87,7 @@ class Cart extends Component {
                     </div>
                 </div>
                 <Footer />
-            </div>
+            </div >
         )
     }
 }
